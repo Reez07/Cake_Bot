@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caketopia</title>
+</head>
+<body>
+    <div class="bg">
+        <h1>Caketopia</h1><br>
+            <h3> Welcome to our shop. Place your order using the ordering bot below.</h3>   
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "8438e8cb-152a-4d8a-9b5c-221727caa8ef", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "e6f6c343-e373-4358-917e-40bff0f747da", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+          document.head.appendChild(t);
+        });
+      </script>
+    
+</body>
+</html>
